@@ -4,6 +4,25 @@ write logcat message to files in sdcard, timing.
 
 # How to use it
 
+Add it in your root build.gradle at the end of repositories:
+
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add the dependency
+
+```
+dependencies {
+    compile 'com.github.User:Repo:Tag'
+}
+```
+
 init WLog in your Application onCreate
 
 ```java
